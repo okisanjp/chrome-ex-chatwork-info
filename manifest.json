@@ -1,0 +1,24 @@
+{
+  "name": "chatwork info maker",
+  "version": "0.9.0",
+  "manifest_version": 2,
+  "description": "今見ているページから、chatworkのinfo形式文字列を作るアドオンです",
+  "background": {
+    "scripts": [ "cw-info.js" ],
+    "persistent": false
+  },
+  "icons": {
+    "16" : "images/16.png",
+    "48" : "images/48.png",
+    "128" : "images/128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/16.png",
+    "default_title": "chatwork info maker"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
