@@ -1,6 +1,6 @@
 {
   "name": "chatwork info maker",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "manifest_version": 2,
   "description": "今見ているページから、chatworkのinfo形式文字列を作るアドオンです",
   "background": {
