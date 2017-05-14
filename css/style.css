@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  width: 300px;
+  width: 500px;
   height: auto;
   padding: 0 4px;
 }
@@ -9,4 +9,25 @@ h1 {
   font-size :18px;
   font-weight: bold;
   padding: 4px;
+}
+textarea#postContent {
+  width: 90%;
+}
+.linkContentItem {
+  padding:4px 0;
+  border-top: 1px solid #eee;
+  font-size:12px;
+}
+.linkContentItem:last-child {
+  border-bottom: 1px solid #eee;
+}
+#linkList label {
+  vertical-align: bottom;
+  width: 90%;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }

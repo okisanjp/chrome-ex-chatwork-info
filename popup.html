@@ -11,20 +11,22 @@
 </head>
 <body>
 <h1>Chatwork Info Maker</h1>
+<p class="alert alert-info">固定しているタブの情報は取得しません</p>
 <div class="container">
   <form id="form" class="form-horizontal">
     <div class="form-group">
       <div class="col-sm-12">
-        <button id="copy" class="btn btn-default" data-clipboard-target="#link">Copy to Clipboard</button>
+        <button id="copy" class="btn btn-default" data-clipboard-target="#postContent">クリップボードにコピーして閉じる</button>
       </div>
     </div>
     <div class="form-group">
-      <label for="link" class="col-sm-12 control-label">コメントの追加もできます</label>
       <div class="col-sm-12">
-        <textarea rows="10" id="link" class="form-control" value="" />
+        <textarea id="postContent" rows="6"></textarea>
       </div>
     </div>
-
+    <div class="form-group">
+      <div id="linkList"></div>
+    </div>
   </form>
 </div>
 </body>
