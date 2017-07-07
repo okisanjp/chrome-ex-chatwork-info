@@ -3,17 +3,16 @@ $(function(){
     var i = 0;
 
     tabs.forEach(function(tab) {
-
-      $('#linkList').append(
-        '<div class="col-sm-12 linkContentItem"><input type="checkbox" id="' +
-        i + '">&nbsp;&nbsp;<label for="' + i + '">' + tab.title + '</label></div>'
+      $('tbody#linkList').append(
+        '<tr><td><label><input type="checkbox" id="' +
+        i + '">&nbsp;&nbsp;' + tab.title + '</label></td></tr>'
       );
       i++;
     });
 
     $('input').on('change', function(){
       var id = $(this).attr("id");
-      var link = '[info][title]' + tabs[id].title + '[/title]' + tabs[id].url + '[/info]\n\n';
+      var link = '[info][title]' + tabs[id].title + '[/title]' + tabs[id].url + '[/info]\n';
       var currentContent = $('#postContent').val();
       if ($(this).prop('checked')) {
         $('#postContent').val(currentContent + link);

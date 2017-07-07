@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  width: 500px;
+  width: 650px;
   height: auto;
   padding: 0 4px;
 }
@@ -14,14 +14,17 @@ textarea#postContent {
   width: 90%;
 }
 .linkContentItem {
-  padding:4px 0;
+  padding:8px 0;
   border-top: 1px solid #eee;
   font-size:12px;
 }
 .linkContentItem:last-child {
   border-bottom: 1px solid #eee;
 }
-#linkList label {
+tbody {
+    width: 500px;
+}
+tbody#linkList > tr > td > input > label {
   vertical-align: bottom;
   width: 90%;
   font-weight: normal;
