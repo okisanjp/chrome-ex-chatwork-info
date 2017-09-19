@@ -1,6 +1,6 @@
 {
-  "name": "chatwork info maker",
-  "version": "1.0.0",
+  "name": "chatworkリンクメーカー",
+  "version": "1.0.3",
   "manifest_version": 2,
   "description": "シェアしたいタブを選んでchatworkのinfo形式文字列に変換するアドオンです",
   "homepage_url": "https://github.com/okisanjp/chrome-ex-chatwork-info",
@@ -11,7 +11,7 @@
   },
   "browser_action": {
     "default_icon": "images/16.png",
-    "default_title": "chatwork info maker",
+    "default_title": "chatwork link maker",
     "default_popup": "popup.html"
   },
   "permissions": [
