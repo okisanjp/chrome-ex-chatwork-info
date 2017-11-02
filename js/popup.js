@@ -3,9 +3,16 @@ $(function(){
     var i = 0;
 
     tabs.forEach(function(tab) {
+      var c = "";
+      if (tab.selected) {
+        c = " checked";
+        var link = '[info][title]' + tab.title + '[/title]' + tab.url + '[/info]\n';
+        var currentContent = $('#postContent').val();
+        $('#postContent').val(currentContent + link);
+      }
       $('tbody#linkList').append(
         '<tr><td><label><input type="checkbox" id="' +
-        i + '">&nbsp;&nbsp;' + tab.title + '</label></td></tr>'
+        i + '"' + c + '>&nbsp;&nbsp;' + tab.title + '</label></td></tr>'
       );
       i++;
     });
