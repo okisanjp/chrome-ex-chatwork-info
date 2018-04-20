@@ -30,7 +30,7 @@ $(function(){
     });
   });
 
-  var clipboard = new Clipboard('.btn');
+  var clipboard = new ClipboardJS('.btn');
   clipboard.on('success', function(e) {
     window.close();
   });

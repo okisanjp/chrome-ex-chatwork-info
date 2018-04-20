@@ -4,9 +4,11 @@ body {
   width: 650px;
   height: 650px;
   padding: 0 4px;
+  font-size: 12px;
+  background: #eee;
 }
 h1 {
-  font-size :18px;
+  font-size :14px;
   font-weight: bold;
   padding: 4px;
 }
@@ -14,7 +16,7 @@ textarea#postContent {
   width: 90%;
 }
 .linkContentItem {
-  padding:8px 0;
+  padding:4px 0;
   border-top: 1px solid #eee;
   font-size:12px;
 }
